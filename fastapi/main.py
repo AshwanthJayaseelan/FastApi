@@ -1,1 +1,7 @@
-from fastapi import Fastapi
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def index():
+    return{"Msg":"Api working sucessfully"}
